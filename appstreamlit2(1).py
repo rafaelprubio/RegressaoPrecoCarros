@@ -142,7 +142,8 @@ with tab1:
             carheight = st.number_input("Altura", 45.0, 65.0, 54.0)
         with c_tec2:
             aspiration = st.selectbox("Aspiração", df['aspiration'].unique())
-            doornumber = st.selectbox("Número de Portas", df['doornumber'].unique())
+            doornumber = st.selectbox("Número de Portas", df['doornumber'].unique(),
+                index=list(df['doornumber'].unique()).index('four') if 'four' in df['doornumber'].unique() else 0)
             boreratio = st.number_input("Bore Ratio", 2.0, 4.0, 3.30)
             stroke = st.number_input("Stroke", 2.0, 5.0, 3.20)
         with c_tec3:
