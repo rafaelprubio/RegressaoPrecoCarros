@@ -30,15 +30,6 @@ def carregar_e_limpar_dados():
         df = pd.read_csv("CarPrice_Assignment.csv")
         df["CarName"] = df["CarName"].str.strip().str.lower()
         df["CarBrand"] = df["CarName"].apply(lambda x: x.split(" ")[0] if isinstance(x, str) else "unknown")
-        brand_corrections = {
-             'maxda': 'mazda',
-             'porcshce': 'porsche',
-             'toyouta': 'toyota',
-             'vokswagen': 'volkswagen',
-             'vw': 'volkswagen',
-             'alfa-romero': 'alfa-romeo'
-         }
-       df["CarBrand"] = df["CarBrand"].replace(brand_corrections)
         df["avg_mpg"] = (df["citympg"] + df["highwaympg"]) / 2
         df["power_per_engine"] = df["horsepower"] / df["enginesize"]
         df["volume"] = df["carlength"] * df["carwidth"] * df["carheight"]
