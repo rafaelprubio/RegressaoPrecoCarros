@@ -119,13 +119,11 @@ with tab1:
         horsepower = st.number_input("Cavalos (Horsepower)", 50, 500, 120, help="Potência do motor")
         enginesize = st.number_input("Tamanho do Motor (cu in)", 50, 400, 150)
         fueltype = st.selectbox("Combustível", df['fueltype'].unique())
-        aspiration = st.selectbox("Aspiração", df['aspiration'].unique())
 
     with col2:
         st.subheader("Dimensões e Carroceria")
         carbody = st.selectbox("Tipo de Carroceria", df['carbody'].unique())
         drivewheel = st.selectbox("Tração", df['drivewheel'].unique())
-        doornumber = st.selectbox("Número de Portas", df['doornumber'].unique())
         curbweight = st.slider("Peso do Carro (lbs)", 1500, 5000, 2500)
 
     with col3:
@@ -143,14 +141,19 @@ with tab1:
             carwidth = st.number_input("Largura", 60.0, 85.0, 66.0)
             carheight = st.number_input("Altura", 45.0, 65.0, 54.0)
         with c_tec2:
+            aspiration = st.selectbox("Aspiração", df['aspiration'].unique())
+            doornumber = st.selectbox("Número de Portas", df['doornumber'].unique())
             boreratio = st.number_input("Bore Ratio", 2.0, 4.0, 3.30)
             stroke = st.number_input("Stroke", 2.0, 5.0, 3.20)
+        with c_tec3:
             compression = st.number_input("Taxa de Compressão", 7.0, 25.0, 9.0)
             peakrpm = st.number_input("RPM Máximo", 3000, 7000, 5000)
-        with c_tec3:
             enginetype = st.selectbox("Tipo de Motor", df['enginetype'].unique())
             cylindernumber = st.selectbox("Número de Cilindros", df['cylindernumber'].unique())
+        c_tec4, c_tec5 = st.columns(2)
+        with c_tec4:
             fuelsystem = st.selectbox("Sistema de Combustível", df['fuelsystem'].unique())
+        with c_tec5:
             enginelocation = st.selectbox("Localização do Motor", df['enginelocation'].unique())
 
     if st.button("Calcular Preço Estimado", type="primary", use_container_width=True):
