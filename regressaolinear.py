@@ -13,7 +13,7 @@ from google.colab import files
 df = pd.read_csv('CarPrice_Assignment.csv')
 print(df)
 
-!pip install -q streamlit
+#!pip install -q streamlit
 
 #import streamlit as st
 import pandas as pd
