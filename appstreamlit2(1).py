@@ -329,7 +329,7 @@ with tab4:
     - **Features:** 26 características técnicas
 
     ### Melhorias Implementadas
-    1. Limpeza de dados (correção de marcas)
+    1. Limpeza de dados
     2. Novas features (avg_mpg, power_per_engine, volume, weight_to_power)
     3. Validação com múltiplas métricas (R², MAE, RMSE, MAPE)
     4. Visualizações interativas
