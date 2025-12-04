@@ -104,7 +104,7 @@ with st.sidebar:
     Este sistema utiliza **Random Forest**, um algoritmo de aprendizado de máquina que:
     - Cria centenas de árvores de decisão
     - Considera múltiplas características simultaneamente
-    - Evita overfitting através de ensemble
+    - Evita overfitting
     """)
 
 tab1, tab2, tab3, tab4 = st.tabs(["Simulador de Preço", "Métricas do Modelo", "Análise Exploratória", "Sobre o Projeto"])
