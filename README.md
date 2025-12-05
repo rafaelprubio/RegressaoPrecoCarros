@@ -39,7 +39,9 @@ O modelo foi avaliado com dados de teste (20% do dataset), apresentando as segui
    ```bash
    git clone https://github.com/rafaelprubio/RegressaoPrecoCarros.git
 2. Instale as dependências:
+   ```bash
    cd RegressaoPrecoCarros
+   
    pip install -r requirements.txt
 4. Execute o script principal:
-   python main.py
+   python appstreamlit2.py
