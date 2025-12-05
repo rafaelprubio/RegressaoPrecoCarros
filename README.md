@@ -44,4 +44,5 @@ O modelo foi avaliado com dados de teste (20% do dataset), apresentando as segui
    
    pip install -r requirements.txt
 4. Execute o script principal:
+   ```bash
    python appstreamlit2.py
