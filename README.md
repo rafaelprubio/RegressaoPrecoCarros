@@ -11,7 +11,7 @@ O objetivo principal é demonstrar o uso de pipelines de dados, seleção autom�
 * **Scikit-Learn:** Construção do pipeline, seleção de features e modelo de Machine Learning.
 * **Matplotlib/Seaborn:** Visualização de correlações.
 
-## ⚙️ O Pipeline do Projeto
+## O Pipeline do Projeto
 
 O projeto segue um fluxo estruturado de processamento:
 
@@ -20,7 +20,7 @@ O projeto segue um fluxo estruturado de processamento:
 3.  **Modelagem:** Treinamento de um **Random Forest Regressor** (com 300 árvores) para realizar a predição.
 4.  **Tratamento de Dados:** Aplicação de transformação logarítmica (Log Transform) no preço para normalizar a distribuição e reduzir o impacto de outliers (carros de luxo).
 
-## 📊 Resultados Obtidos
+## Resultados Obtidos
 
 O modelo foi avaliado com dados de teste (20% do dataset), apresentando as seguintes métricas:
 
@@ -33,7 +33,7 @@ O modelo foi avaliado com dados de teste (20% do dataset), apresentando as segui
 
 *Obs: A diferença entre o RMSE e o MAE indica a presença de outliers (carros de alto valor) que são naturalmente mais difíceis de prever com exatidão.*
 
-## 🚀 Como Executar
+## Como Executar
 
 1. Clone o repositório:
    ```bash
