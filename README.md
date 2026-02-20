@@ -4,7 +4,7 @@ Este projeto consiste em um modelo de Machine Learning desenvolvido para prever 
 
 O objetivo principal é demonstrar o uso de pipelines de dados, seleção automática de features e modelagem preditiva para um problema de regressão.
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **Python 3**
 * **Pandas & Numpy:** Manipulação e análise de dados.
